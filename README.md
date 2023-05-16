@@ -4,7 +4,7 @@ This script collects data from the [Melanchthon Briefwechsel database](https://m
 ### 2. Requirements
 
 - Latest Python 3 version
-- Modules: Beatifulsoup 4, requests, csv, lxml
+- Modules: Beatifulsoup 4, requests, csv, lxml, time
 
 ### 3. Functionality
 Data to scrape:
@@ -12,3 +12,6 @@ Data to scrape:
 - Sender + location
 - Recipient + location
 - Date
+
+### 4. TODO
+- check whether database entry also exists ending in -a (eg. 4, 4a)
