@@ -14,4 +14,4 @@ Data to scrape:
 - Date
 
 ### 4. TODO
-- check whether database entry also exists ending in -a (eg. 4, 4a)
+- integrate CLI input for index range to scrape
