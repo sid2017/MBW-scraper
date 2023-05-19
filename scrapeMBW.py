@@ -63,15 +63,15 @@ def main():
 		if names:
 			name_els = names.find_all('name')
 			if len(name_els) > 1:
-                # name
+				# name
 				recipient = name_els[1].text
 				recip_id = name_els[1].get('ref')
 
-                # location
+				# location
 				rec_loc = name_els[2].text
 				loc_id = name_els[2].get('ref')
 
-        # scrape sender location and date
+		# scrape sender location and date
 		headline = soup.find_all('h2')
 		reg_loc = reg_date = None
 		if len(headline) > 1:
@@ -80,7 +80,7 @@ def main():
 				geoloc = spans[-1].text
 				reg_loc, reg_date = geoloc.split(',', 1)
 
-    	# write csv output
+		# write csv output
 		csv_writer.writerow([text_val, recipient, recip_id, rec_loc, loc_id, reg_loc, url])
 		csv_file.flush()
 
@@ -89,4 +89,4 @@ def main():
 	csv_file.close()
 		
 if __name__ == "__main__":
-    main()
+	main()
