@@ -87,6 +87,6 @@ def main():
 		time.sleep(3)
 	
 	csv_file.close()
-
+		
 if __name__ == "__main__":
 	main()
